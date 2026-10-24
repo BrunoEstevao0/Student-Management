@@ -1,0 +1,58 @@
+const mongoose = require("mongoose");
+
+const studentSchema = new mongoose.Schema({
+  // Custom auto-increment ID
+  _id: {
+    type: Number,
+    required: true
+  },
+
+  fullName: {
+    type: String,
+    required: true
+  },
+
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+
+  mobile: {
+    type: String,
+    required: true
+  },    
+
+  dob: {
+    type: String,
+    required: true
+  },
+
+  gender: {
+    type: String,
+    required: true
+  },
+
+  course: {
+    type: String,
+    required: true
+  },
+
+  address: {
+    type: String,
+    required: true
+  },
+
+  password: {
+    type: String,
+    required: true
+  },
+
+  // false = Pending, true = Confirmed
+  admissionConfirmed: {
+    type: Boolean,
+    default: false
+  }
+});
+
+module.exports = mongoose.model("Student", studentSchema);
