@@ -1,0 +1,135 @@
+/* src/styles/StudentDashboard.css */
+.dashboard-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(179, 207, 229, 0.4), transparent 35%),
+    linear-gradient(135deg, #F6FAFD 0%, #E2EDF8 100%);
+  padding: 35px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  max-width: 750px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow:
+    0 20px 40px rgba(10, 25, 49, 0.15),
+    0 0 25px rgba(179, 207, 229, 0.2);
+  border: 1px solid #D1E3F3;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #0A1931;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logout-button {
+  background: linear-gradient(135deg, #8B2E3C, #A93849);
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(139, 46, 60, 0.35);
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background: linear-gradient(135deg, #A93849, #C54356);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(139, 46, 60, 0.5);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A3D63;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #B3CFE5;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: #0A1931;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4A7FA7;
+  box-shadow: 0 0 0 3px rgba(74, 127, 167, 0.15);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 13px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1A3D63 0%, #4A7FA7 100%);
+  color: #F6FAFD;
+  border: none;
+  box-shadow: 0 4px 15px rgba(26, 61, 99, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #234D7C, #5691BD);
+  box-shadow: 0 6px 20px rgba(74, 127, 167, 0.6);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #4A7FA7, #2c5270);
+  color: #F6FAFD;
+  border: none;
+  box-shadow: 0 4px 15px rgba(74, 127, 167, 0.4);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #5691BD, #38678c);
+}
